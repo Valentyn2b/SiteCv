@@ -1,0 +1,195 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 40px;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.resume-header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.header-left h1 {
+    font-size: 5rem; 
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.header-right {
+    flex-basis: 300px;
+    border-top: 1px solid #000; 
+    padding-top: 15px;
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.header-right p {
+    margin: 5px 0;
+}
+
+.header-right a {
+    color: #000;
+    text-decoration: none;
+}
+
+.header-right a:hover {
+    text-decoration: underline; 
+}
+
+.separator-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 40px;
+}
+
+.resume-main {
+    display: flex;
+    gap: 60px; 
+}
+
+.column-left {
+    flex: 1; 
+}
+
+.column-right {
+    flex-basis: 350px; 
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+ul.education-list, ul.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.education-list li, ul.skills-list li {
+    margin-bottom: 20px;
+}
+
+ul.education-list strong {
+    font-size: 1.1rem;
+}
+
+ul.education-list em {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+
+
+/* =========================================
+   СТИЛІ ДЛЯ ТЕМНОЇ ТЕМИ (Пункт 4)
+========================================= */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+body.dark-mode a { color: #66b3ff; }
+body.dark-mode .separator-line { background-color: #444; }
+body.dark-mode .header-right { border-top-color: #e0e0e0; }
+
+.theme-btn {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+body.dark-mode .theme-btn {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* =========================================
+   СТИЛІ МОДАЛЬНОГО ВІКНА ТА ФОРМИ (Пункт 3)
+========================================= */
+.modal {
+    display: none; /* Вікно приховане за замовчуванням */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Напівпрозорий чорний фон */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+body.dark-mode .modal-content {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+.close-btn:hover { color: #000; }
+body.dark-mode .close-btn:hover { color: #fff; }
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modal-content input, .modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.submit-btn {
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.submit-btn:hover { background-color: #333; }

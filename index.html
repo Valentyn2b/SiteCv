@@ -1,42 +1,114 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Резюме Богів</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentyn Bohiv - CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Богів Валентин Романович</h1>
-        <p>Студент спеціальності кібербезпека у Національному Університеті Львівська Політехніка</p>
-    </header>
+    <div class="resume-container">
+        <header class="resume-header">
+            <div class="header-left">
+                <h1>Valentyn<br>Bohiv</h1>
+                <button id="theme-toggle" class="theme-btn">Перемкнути тему</button>
+            </div>
+            <div class="header-right">
+                <p>Cybersecurity Student at Lviv Polytechnic National University</p>
+                <p><strong>Mob:</strong> +380 63 357 32 06</p>
+                <p><a href="mailto:0802bvr@gmail.com">0802bvr@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/valentyn-bohiv-91bab93b1/" target="_blank">LinkedIn Profile</a></p>
+            </div>
+        </header>
 
-    <hr>
+        <div class="separator-line"></div>
 
-    <main>
-        <section>
-            <h2>Про мене</h2>
-            <p>Тут напиши кілька речень про себе, свої цілі, мотивацію та загальний рівень знань.</p>
+        <main class="resume-main">
+            <div class="column-left">
+                <section>
+                    <h2>Summary</h2>
+                    <p>I began my academic journey by graduating secondary school with honors, followed by a College degree where I was awarded a merit-based scholarship for consistent academic excellence. Currently, I am a second-year Cybersecurity student, focusing on developing technical expertise and protective strategies in the digital landscape.</p>
+                    <p>I have a solid basic knowledge of Python, capable of writing and debugging simple scripts. Familiar with ISO/IEC 27001 standards for establishing and maintaining Information Security Management Systems (ISMS). Proficient in administration and security basics across Windows, Linux (Ubuntu), and macOS environments.</p>
+                    <p>Expert in Typst for creating high-quality, typeset technical reports and academic documentation (a modern, faster alternative to LaTeX). Advanced user of Microsoft Office. High-speed touch typing (blind typing) for efficient workflow and documentation.</p>
+                    <p>Proven ability to lead projects as a Local Project Manager, coordinating team efforts to deliver high-quality results. Solid understanding of the startup lifecycle, business modeling, and effective pitching techniques for presenting innovative ideas to stakeholders.</p>
+                    <p>Strong interpersonal skills with the ability to foster clear, constructive dialogue within a team to achieve shared objectives. Highly disciplined and detail-oriented, with a consistent track record of meeting strict deadlines and managing multiple priorities effectively.</p>
+                </section>
+                
+                <section>
+                    <h2>Licenses & Certifications</h2>
+                    <ul class="education-list">
+                        <li>
+                            <strong>Internet Security During War: A Practical Course</strong><br>
+                            Prometheus<br>
+                            <em>Issued: Feb 2026</em><br>
+                            Skills: Cybersecurity Awareness
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="column-right">
+                <section>
+                    <h2>Education</h2>
+                    <ul class="education-list">
+                        <li>
+                            <strong>Lviv Polytechnic National University</strong><br>
+                            Bachelor, Cybersecurity<br>
+                            <em>Sep 2024 – Jun 2028</em><br>
+                            GPA: 4.8 / 5 (after the second half of the year)<br>
+                            Activities: Basketball, Table tennis, Box, Startup development
+                        </li>
+                        <li>
+                            <strong>Professional College of Electronic Devices (IFNTUNG)</strong><br>
+                            Junior Bachelor, Computer Engineering<br>
+                            <em>Sep 2022 – Jun 2024</em><br>
+                            GPA: 11 / 12<br>
+                            Activities: Guitar Courses
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Skills</h2>
+                    <ul class="skills-list">
+                        <li><strong>Technical Skills:</strong> Cybersecurity, Information Security, ISO 27001, Linux, Computer Networking, Python, MySQL, Bash, HTML, CSS</li>
+                        <li><strong>Tools & Software:</strong> Typst, Git, AIDA64, Electronics Workbench, Adobe Illustrator, Adobe Acrobat, Google Analytics, Microsoft Office</li>
+                        <li><strong>Soft Skills:</strong> Project Management, Problem Solving, Critical Thinking, Communication, Teamwork, Time Management</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Languages</h2>
+                    <ul class="skills-list">
+                        <li><strong>English:</strong> Professional working proficiency</li>
+                        <li><strong>Ukrainian:</strong> Native or bilingual proficiency</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+    <section class="comments-section" style="margin-top: 40px; width: 100%;">
+            <h2>Відгуки роботодавців</h2>
+            <div id="comments-container">
+                </div>
         </section>
-
-        <section>
-            <h2>Освіта</h2>
-            <ul>
-                <li>
-                    <strong>Назва навчального закладу</strong><br>
-                    Ступінь (наприклад, Бакалавр), Спеціальність<br>
-                    <em>Роки навчання (напр. Вер 2023 - Черв 2027)</em>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Навички</h2>
-            <ul>
-                <li><strong>Мови програмування:</strong> C++, Python, HTML (впиши своє)</li>
-                <li><strong>Інструменти:</strong> Git, Linux</li>
-                <li><strong>М'які навички (Soft Skills):</strong> Командна робота, тайм-менеджмент</li>
-            </ul>
-        </section>
-    </main>
+    </div> <footer id="os-browser-info" style="margin-top: 50px; text-align: center; color: #666; font-size: 0.9rem; padding: 20px; border-top: 1px solid #ccc;">
+        </footer>
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h2>Залиште відгук</h2>
+            <form action="https://formspree.io/f/xwvrwran" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Ваш Email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону" required>
+                <textarea name="message" placeholder="Ваше повідомлення" rows="4" required></textarea>
+                <button type="submit" class="submit-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
